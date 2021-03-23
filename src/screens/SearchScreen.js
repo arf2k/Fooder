@@ -17,7 +17,7 @@ const SearchScreen = () => {
 
 
   return (
-    <View>
+    <View >
       <SearchBar term={term} onTermChange={setTerm} onTermSubmit={()=> searchYelp(term)} />
       {error ? <Text> {error}</Text> : null}
       <Text>We have found {results.length} results</Text>
